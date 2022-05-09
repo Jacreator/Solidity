@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "arr",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "startChange",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/myLearning/StateAndStorage.sol": "StateAndStorage"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/myLearning/StateAndStorage.sol": {
+			"keccak256": "0x3bfc7eb93f3cd62daaba7a1733d0132d9514260900438375221c1144edd6832d",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://1eb3f8cfe49cc620c590579214d8d44c0ecbf486a26d572e6b30c5c21e44497e",
+				"dweb:/ipfs/QmYV7ELT7RvRDu7SuFD2H5GMQYtbD3Q8Hqb88BDXtrccch"
+			]
+		}
+	},
+	"version": 1
+}
