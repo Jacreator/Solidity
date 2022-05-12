@@ -35,7 +35,7 @@ contract Bank {
         return totalSupply;
     }
 
-    function transfer(address receiver, uint256 _value) payable public returns(bool) {
+    function transferToo(address receiver, uint256 _value) public returns(bool) {
         require(_value <= owner.balance);
         owner.balance = owner.balance - _value;
         receiver.balance += _value;

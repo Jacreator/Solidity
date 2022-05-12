@@ -2,6 +2,11 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 contract AccountStrut {
+    
+    modifier _moreMoney(uint amount, uint givenMoney) {
+        require(amount >= givenMoney);
+        _;
+    }
     struct Account {
         address _address;
         uint _amount;
@@ -27,14 +32,13 @@ contract AccountStrut {
         return _acc2._amount;
     }
 
-    function withdraw(uint _money) public returns (uint) {
-        require(_acc1._amount >= _money);
+    function withdraw(uint _money) public _moreMoney(_acc1._amount, _money) returns (uint) {
+        
         _acc1._amount -= _money;
         return _acc1._amount;
     }
 
-    function transfer(uint _money) public returns (bool) {
-        require(_acc1._amount >= _money);
+    function transfer(uint _money) public _moreMoney(_acc1._amount, _money) returns (bool) {
         withdraw(_money);
         addAmount2(_money);
         return true;
